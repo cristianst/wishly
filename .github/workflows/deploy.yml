@@ -1,7 +1,8 @@
 # Production release, in the order the plan requires:
 #   CI -> database migrations -> Edge Functions -> frontend (Cloudflare Pages) -> smoke tests
 # Migrations are backward-compatible, so they are applied BEFORE the code that depends on them.
-# Runs only for main (or a manually chosen ref, which is also how you roll back: dispatch an older tag).
+# Runs for pushes to main (i.e. merges). A manual run is allowed only on main or on a tag, which is how you
+# roll back: dispatch an older tag.
 name: Deploy
 
 on:
@@ -24,6 +25,10 @@ jobs:
   deploy:
     name: Deploy to production
     needs: ci
+    # Only merged code reaches production: main, or a tag when rolling back. A manual run on an
+    # unmerged feature branch is refused here (and should also be blocked by the environment's
+    # "deployment branches" rule, see docs/DEPLOYMENT.md).
+    if: github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/tags/')
     runs-on: ubuntu-latest
     timeout-minutes: 30
     # Configure required reviewers on this environment to gate every production release.

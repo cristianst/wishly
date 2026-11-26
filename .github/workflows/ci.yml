@@ -39,6 +39,9 @@ jobs:
         run: npm test
       - name: Production build
         run: npm run build
+      # The browser may only ever receive publishable keys. Fail loudly if a secret key sneaks in.
+      - name: Scan bundle for secret keys
+        run: node scripts/check-bundle-secrets.ts dist
 
   database:
     name: Database (RLS policies and reservation races)

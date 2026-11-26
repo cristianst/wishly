@@ -1,5 +1,7 @@
 # Wishly – Environment setup
 
+> Releasing to production (CI, Cloudflare Pages, secrets): see [DEPLOYMENT.md](DEPLOYMENT.md). Overview: [README](../README.md).
+
 ## Local development
 
 ```bash
@@ -32,7 +34,7 @@ for them is implemented, but **live sign-in has not been verified** until you co
 2. **Redirect allow-list:** Supabase → Authentication → URL Configuration. Set the Site URL and add
    every callback you use, for example:
    - `http://localhost:5173/auth/callback`
-   - your Cloudflare Pages preview and production origins + `/auth/callback`
+   - your production origin (your Cloudflare Pages / custom domain) + `/auth/callback`
 3. **Email magic link:** enable the Email provider (Authentication → Providers). The built-in mail
    sender is heavily rate-limited; configure a custom SMTP provider before real use.
 4. **Google OAuth:**
