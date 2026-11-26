@@ -24,10 +24,10 @@ describe('release rules: branches are tested, only merges to main deploy', () =>
     )
   })
 
-  it('cannot deploy without passing CI and the production environment', () => {
+  it('cannot deploy without passing CI and the prod environment', () => {
     expect(deploy).toMatch(/uses: \.\/\.github\/workflows\/ci\.yml/)
     expect(deploy).toMatch(/needs: ci/)
-    expect(deploy).toMatch(/environment: production/)
+    expect(deploy).toMatch(/environment: prod$/m)
   })
 
   it('applies migrations before functions, and functions before the frontend, then smoke-tests', () => {
