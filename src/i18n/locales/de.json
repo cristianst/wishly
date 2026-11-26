@@ -1,0 +1,218 @@
+{
+  "common": {
+    "appName": "Wishly",
+    "skipToContent": "Zum Inhalt springen",
+    "loading": "Wird geladen…",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "delete": "Löschen",
+    "retry": "Erneut versuchen",
+    "saving": "Wird gespeichert…",
+    "saved": "Gespeichert ✓"
+  },
+  "language": {
+    "label": "Sprache",
+    "en": "English",
+    "es": "Español",
+    "de": "Deutsch"
+  },
+  "meta": {
+    "landingTitle": "Wishly – Teile deine Wunschliste",
+    "notFoundTitle": "Seite nicht gefunden – Wishly",
+    "loginTitle": "Anmelden – Wishly",
+    "dashboardTitle": "Deine Wunschlisten – Wishly",
+    "callbackTitle": "Anmeldung läuft – Wishly",
+    "newWishlistTitle": "Neue Wunschliste – Wishly",
+    "editWishlistTitle": "Wunschliste bearbeiten – Wishly",
+    "sharedTitle": "{{title}} – Wishly",
+    "privacyTitle": "Datenschutz – Wishly"
+  },
+  "landing": {
+    "eyebrow": "Geschenklisten, ganz einfach",
+    "title": "Wünsche, die man gerne teilt 🎁",
+    "subtitle": "Erstelle Wunschlisten, teile sie per Link und lass Freunde und Familie Geschenke reservieren – ohne Anmeldung.",
+    "featuresLabel": "Das bietet Wishly",
+    "features": {
+      "share": {
+        "title": "Per Link teilen",
+        "description": "Jede Liste bekommt einen eigenen privaten Link. Zum Ansehen ist kein Konto nötig."
+      },
+      "reserve": {
+        "title": "Mit einem Tipp reservieren",
+        "description": "Gäste markieren ein Geschenk als vergeben, damit niemand dasselbe zweimal kauft."
+      },
+      "live": {
+        "title": "Immer aktuell",
+        "description": "Reservierungen aktualisieren sich von selbst, solange die Seite geöffnet ist."
+      }
+    },
+    "cta": "Los geht’s"
+  },
+  "notFound": {
+    "title": "Diese Seite wurde nicht gefunden",
+    "description": "Der Link ist möglicherweise falsch oder nicht mehr verfügbar.",
+    "home": "Zurück zur Startseite"
+  },
+  "errors": {
+    "generic": "Etwas ist schiefgelaufen. Bitte versuche es erneut.",
+    "reservationConflict": "Jemand hat dieses Geschenk bereits reserviert.",
+    "auth": {
+      "RATE_LIMITED": "Zu viele Versuche. Bitte warte einen Moment und versuche es erneut.",
+      "NETWORK": "Der Server ist nicht erreichbar. Prüfe deine Verbindung und versuche es erneut.",
+      "FAILED": "Die Anmeldung hat nicht funktioniert. Bitte versuche es erneut.",
+      "NOT_CONFIGURED": "Die Anmeldung ist für diese Umgebung noch nicht eingerichtet."
+    },
+    "api": {
+      "NOT_FOUND": "Wir konnten das nicht finden. Es wurde möglicherweise gelöscht.",
+      "UNAUTHORIZED": "Dazu hast du keine Berechtigung. Melde dich bitte erneut an.",
+      "NETWORK": "Der Server ist nicht erreichbar. Prüfe deine Verbindung und versuche es erneut.",
+      "UNKNOWN": "Etwas ist schiefgelaufen. Bitte versuche es erneut.",
+      "RATE_LIMITED": "Zu viele Anfragen. Bitte warte einen Moment und versuche es erneut.",
+      "RESERVATION_CONFLICT": "Jemand hat dieses Geschenk bereits reserviert.",
+      "NOT_RESERVATION_OWNER": "Dieses Geschenk wurde in einem anderen Browser oder auf einem anderen Gerät reserviert und kann hier nicht aufgehoben werden.",
+      "INVALID_URL": "Gib einen Link ein, der mit http:// oder https:// beginnt. Private oder interne Adressen können nicht importiert werden."
+    }
+  },
+  "nav": {
+    "dashboard": "Übersicht"
+  },
+  "auth": {
+    "signIn": "Anmelden",
+    "signOut": "Abmelden",
+    "loginTitle": "Willkommen bei Wishly",
+    "loginSubtitle": "Melde dich an, um deine Wunschlisten zu erstellen und zu verwalten.",
+    "continueWithGoogle": "Weiter mit Google",
+    "orDivider": "oder",
+    "emailLabel": "E-Mail-Adresse",
+    "sendMagicLink": "Anmeldelink per E-Mail senden",
+    "sending": "Wird gesendet…",
+    "checkInboxTitle": "Schau in dein Postfach",
+    "checkInboxBody": "Wir haben einen Anmeldelink an {{email}} gesendet. Öffne ihn auf diesem Gerät, um fortzufahren.",
+    "useAnotherEmail": "Andere E-Mail-Adresse verwenden",
+    "signingIn": "Du wirst angemeldet…",
+    "callbackFailedTitle": "Die Anmeldung hat nicht geklappt",
+    "callbackFailedBody": "Der Anmeldelink ist möglicherweise abgelaufen oder wurde bereits verwendet. Bitte versuche es erneut.",
+    "backToLogin": "Zurück zur Anmeldung"
+  },
+  "dashboard": {
+    "title": "Deine Wunschlisten",
+    "signedInAs": "Angemeldet als {{email}}",
+    "emptyTitle": "Noch keine Wunschlisten",
+    "emptyDescription": "Erstelle deine erste Wunschliste und füge Geschenke hinzu, über die du dich freuen würdest."
+  },
+  "validation": {
+    "emailRequired": "Gib deine E-Mail-Adresse ein.",
+    "emailInvalid": "Gib eine gültige E-Mail-Adresse ein.",
+    "titleRequired": "Gib einen Titel ein.",
+    "titleTooLong": "Verwende höchstens 100 Zeichen.",
+    "descriptionTooLong": "Verwende höchstens 1.000 Zeichen.",
+    "giftTitleTooLong": "Verwende höchstens 150 Zeichen.",
+    "giftDescriptionTooLong": "Verwende höchstens 2.000 Zeichen.",
+    "urlInvalid": "Gib einen Link ein, der mit http:// oder https:// beginnt.",
+    "priceInvalid": "Gib einen Betrag wie 19,99 ein.",
+    "currencyInvalid": "Wähle eine Währung."
+  },
+  "wishlist": {
+    "create": "Wunschliste erstellen",
+    "createSubmit": "Erstellen",
+    "titleLabel": "Titel",
+    "descriptionLabel": "Beschreibung (optional)",
+    "backToDashboard": "← Zurück zu deinen Wunschlisten",
+    "itemCount_one": "{{count}} Geschenk",
+    "itemCount_other": "{{count}} Geschenke",
+    "notFoundTitle": "Wunschliste nicht gefunden",
+    "notFoundDescription": "Sie wurde möglicherweise gelöscht oder gehört zu einem anderen Konto.",
+    "detailsHeading": "Details",
+    "dangerHeading": "Wunschliste löschen",
+    "delete": "Diese Wunschliste löschen",
+    "deleteTitle": "Diese Wunschliste löschen?",
+    "deleteDescription": "„{{title}}“ und alle Geschenke darin werden endgültig gelöscht. Das lässt sich nicht rückgängig machen."
+  },
+  "gift": {
+    "heading": "Geschenke",
+    "add": "Geschenk hinzufügen",
+    "addSubmit": "Geschenk hinzufügen",
+    "titleLabel": "Name des Geschenks",
+    "productUrlLabel": "Produktlink (optional)",
+    "priceLabel": "Preis (optional)",
+    "currencyLabel": "Währung",
+    "imageUrlLabel": "Bildlink (optional)",
+    "descriptionLabel": "Notizen (optional)",
+    "emptyTitle": "Noch keine Geschenke",
+    "emptyDescription": "Füge das erste Geschenk zu dieser Wunschliste hinzu.",
+    "viewProduct": "Produkt ansehen",
+    "editLabel": "{{title}} bearbeiten",
+    "deleteLabel": "{{title}} löschen",
+    "deleteTitle": "Dieses Geschenk löschen?",
+    "deleteDescription": "„{{title}}“ wird aus der Wunschliste entfernt.",
+    "reserve": "Das besorge ich 🎁",
+    "reservedByYou": "Von dir reserviert",
+    "cancelReservation": "Reservierung aufheben",
+    "reserving": "Wird reserviert…",
+    "cancelling": "Wird aufgehoben…",
+    "checking": "Wird geprüft…",
+    "reservedBadge": "Von einem Gast reserviert",
+    "importDetails": "Details importieren",
+    "importing": "Wird importiert…",
+    "importHint": "Füge einen Produktlink ein und importiere Name, Bild und Preis. Danach kannst du alles bearbeiten.",
+    "importSuccess": "Details importiert. Prüfe sie und ändere, was du möchtest.",
+    "importPartial": "Wir haben einige Details gefunden. Bitte ergänze den Rest.",
+    "importFailed": "Wir konnten die Details dieser Seite nicht lesen. Du kannst sie selbst eingeben.",
+    "importBlocked": "Dieser Shop erlaubt uns nicht, seine Seiten automatisch zu lesen. Du kannst die Details selbst eingeben.",
+    "imageHint": "Wir speichern nur den Link zum Bild; das Bild selbst bleibt auf der Website des Shops.",
+    "previewLabel": "Vorschau",
+    "imagePreviewFailed": "Das Bild konnte nicht geladen werden. Der Shop blockiert Vorschauen möglicherweise; du kannst einen anderen Bildlink einfügen."
+  },
+  "share": {
+    "heading": "Teilen",
+    "description": "Jeder mit diesem Link kann diese Wunschliste ansehen und Geschenke reservieren. Teile ihn nur mit Personen, denen du vertraust.",
+    "linkLabel": "Link zum Teilen",
+    "copy": "Link kopieren",
+    "copied": "Link kopiert ✓",
+    "copyFailed": "Automatisches Kopieren war nicht möglich. Der Link ist markiert: Kopiere ihn manuell.",
+    "preview": "Geteilte Seite öffnen",
+    "regenerate": "Neuen Link erstellen",
+    "regenerateTitle": "Neuen Link erstellen?",
+    "regenerateDescription": "Der aktuelle Link funktioniert sofort nicht mehr. Wer ihn noch hat, verliert den Zugriff.",
+    "regenerateConfirm": "Neuen Link erstellen",
+    "regenerated": "Neuer Link erstellt ✓"
+  },
+  "public": {
+    "unavailableTitle": "Diese Wunschliste ist nicht verfügbar",
+    "unavailableDescription": "Der Link ist möglicherweise falsch, oder die Person hat einen neuen erstellt.",
+    "alreadyReserved": "Bereits reserviert",
+    "emptyTitle": "Noch keine Geschenke",
+    "emptyDescription": "Schau bald wieder vorbei.",
+    "storageWarning": "Dein Browser blockiert den lokalen Speicher. Du kannst ein Geschenk trotzdem reservieren, aber möglicherweise nicht mehr aufheben, nachdem du diese Seite verlassen hast."
+  },
+  "privacy": {
+    "link": "Datenschutz",
+    "title": "Datenschutz",
+    "intro": "Mit Wishly kannst du Wunschlisten erstellen und per Link teilen. Diese Seite erklärt, welche Daten der Dienst verarbeitet und wie die App derzeit funktioniert.",
+    "collect": {
+      "title": "Was wir speichern",
+      "body": "Wenn du Wunschlisten erstellst, speichern wir deine E-Mail-Adresse (von Google oder aus einem Anmeldelink per E-Mail) sowie die Wunschlisten und Geschenke, die du hinzufügst: Titel, Notizen, Produkt- und Bildlinks und Preise. Gäste, die ein Geschenk reservieren, werden nach keinen persönlichen Daten gefragt. Für eine Reservierung speichern wir nur einen Einweg-Hash eines zufälligen Codes, der im Browser des Gastes erzeugt wird. So kann niemand, auch nicht die Person, der die Liste gehört, sehen, wer ein Geschenk reserviert hat."
+    },
+    "browser": {
+      "title": "Was in deinem Browser bleibt",
+      "body": "Wishly nutzt den lokalen Speicher deines Browsers, keine Tracking-Cookies, für deine Sprachauswahl, deine Anmeldesitzung, die Seite, zu der du nach der Anmeldung zurückkehrst, und die zufälligen Codes, mit denen du deine eigenen Reservierungen aufheben kannst. Wenn du diese Daten auf einem Gerät löschst, kannst du dort vorgenommene Reservierungen nicht mehr aufheben. Wir verwenden keine Analyse- oder Werbe-Tracker."
+    },
+    "providers": {
+      "title": "Wer Daten für uns verarbeitet",
+      "body": "Supabase stellt Datenbank, Anmeldung und Server-Funktionen bereit. Cloudflare liefert die Website aus und sieht technische Anfragedaten wie IP-Adressen. Wenn du dich mit Google anmeldest, übernimmt Google diese Anmeldung. Anmelde-E-Mails verschickt der E-Mail-Anbieter, den der Betreiber eingerichtet hat. Wenn du ein Produkt über einen Link importierst, ruft unser Server diese Webseite ab; ein Vorschau-Dienst eines Drittanbieters wird nicht verwendet."
+    },
+    "links": {
+      "title": "Geteilte Links",
+      "body": "Der Link zu einer geteilten Wunschliste funktioniert wie ein Schlüssel: Wer ihn hat, kann die Liste ansehen und Geschenke reservieren, und die Seite ist für Suchmaschinen verborgen. Teile ihn nur mit Personen, denen du vertraust. Du kannst jederzeit einen neuen Link erstellen; der alte funktioniert dann sofort nicht mehr."
+    },
+    "retention": {
+      "title": "Wie lange wir Daten aufbewahren",
+      "body": "Wunschlisten, Geschenke und Reservierungen bleiben gespeichert, bis du sie löschst. Wird eine Wunschliste gelöscht, werden auch ihre Geschenke und Reservierungen gelöscht. Kontodaten bleiben gespeichert, solange du den Dienst nutzt. Eine Kontolöschung in Eigenregie gibt es noch nicht: Wende dich an den Betreiber, damit dein Konto und deine Daten entfernt werden."
+    },
+    "rights": {
+      "title": "Deine Rechte",
+      "body": "Du kannst beim Betreiber Auskunft über deine personenbezogenen Daten verlangen, sie berichtigen oder löschen lassen und ihre Verarbeitung einschränken oder ihr widersprechen. Außerdem kannst du dich bei deiner Datenschutzbehörde beschweren."
+    },
+    "contact": "Kontakt zum Betreiber:"
+  }
+}

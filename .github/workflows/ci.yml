@@ -1,0 +1,71 @@
+# Continuous integration. Runs on every pull request and is reused by the deploy workflow (which runs
+# on every push to main), so a release can only ship code that passed exactly these checks.
+name: CI
+
+on:
+  pull_request:
+  workflow_call:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  checks:
+    name: Lint, types, tests, build
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - name: Audit dependencies
+        run: npm audit --audit-level=high
+      - name: Lint
+        run: npm run lint
+      - name: Format check
+        run: npm run format:check
+      - name: Type check
+        run: npm run typecheck
+      - name: Unit, component and Edge Function tests (includes EN/ES/DE locale parity)
+        run: npm test
+      - name: Production build
+        run: npm run build
+      # The browser may only ever receive publishable keys. Fail loudly if a secret key sneaks in.
+      - name: Scan bundle for secret keys
+        run: node scripts/check-bundle-secrets.ts dist
+
+  database:
+    name: Database (RLS policies and reservation races)
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      # Applies the real migrations to a throwaway PostgreSQL container and runs the policy tests,
+      # then races 24 parallel connections for one gift (exactly one may win).
+      - name: RLS and concurrency tests
+        run: bash tests/integration/run-db-tests.sh
+
+  edge-functions:
+    name: Edge Functions (Deno type check)
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: denoland/setup-deno@v2
+        with:
+          deno-version: v2.x
+      - name: Type check handlers and shared modules
+        run: deno check supabase/functions/*/handler.ts supabase/functions/_shared/*.ts

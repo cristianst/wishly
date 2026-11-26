@@ -1,0 +1,10 @@
+dist
+coverage
+node_modules
+.venv
+graphify-out
+.claude
+package-lock.json
+AGENTS.md
+docs
+supabase/templates

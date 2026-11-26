@@ -1,0 +1,218 @@
+{
+  "common": {
+    "appName": "Wishly",
+    "skipToContent": "Saltar al contenido",
+    "loading": "Cargando…",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
+    "retry": "Reintentar",
+    "saving": "Guardando…",
+    "saved": "Guardado ✓"
+  },
+  "language": {
+    "label": "Idioma",
+    "en": "English",
+    "es": "Español",
+    "de": "Deutsch"
+  },
+  "meta": {
+    "landingTitle": "Wishly – Comparte tu lista de deseos",
+    "notFoundTitle": "Página no encontrada – Wishly",
+    "loginTitle": "Iniciar sesión – Wishly",
+    "dashboardTitle": "Tus listas de deseos – Wishly",
+    "callbackTitle": "Iniciando sesión – Wishly",
+    "newWishlistTitle": "Nueva lista – Wishly",
+    "editWishlistTitle": "Editar lista – Wishly",
+    "sharedTitle": "{{title}} – Wishly",
+    "privacyTitle": "Privacidad – Wishly"
+  },
+  "landing": {
+    "eyebrow": "Listas de regalos, sin complicaciones",
+    "title": "Deseos que merece la pena compartir 🎁",
+    "subtitle": "Crea listas de deseos, compártelas con un enlace y deja que amigos y familia reserven regalos sin registrarse.",
+    "featuresLabel": "Qué ofrece Wishly",
+    "features": {
+      "share": {
+        "title": "Comparte con un enlace",
+        "description": "Cada lista tiene su propio enlace privado. No hace falta cuenta para verla."
+      },
+      "reserve": {
+        "title": "Reserva con un toque",
+        "description": "Los invitados marcan un regalo como elegido para que nadie compre lo mismo dos veces."
+      },
+      "live": {
+        "title": "Siempre al día",
+        "description": "Las reservas se actualizan solas mientras la página está abierta."
+      }
+    },
+    "cta": "Empezar"
+  },
+  "notFound": {
+    "title": "No hemos encontrado esa página",
+    "description": "Puede que el enlace sea incorrecto o que ya no esté disponible.",
+    "home": "Volver al inicio"
+  },
+  "errors": {
+    "generic": "Algo ha salido mal. Inténtalo de nuevo.",
+    "reservationConflict": "Alguien ya ha reservado este regalo.",
+    "auth": {
+      "RATE_LIMITED": "Demasiados intentos. Espera un momento e inténtalo de nuevo.",
+      "NETWORK": "No hemos podido conectar con el servidor. Comprueba tu conexión e inténtalo de nuevo.",
+      "FAILED": "No se ha podido iniciar sesión. Inténtalo de nuevo.",
+      "NOT_CONFIGURED": "El inicio de sesión aún no está configurado en este entorno."
+    },
+    "api": {
+      "NOT_FOUND": "No hemos encontrado ese elemento. Puede que se haya eliminado.",
+      "UNAUTHORIZED": "No tienes permiso para hacerlo. Prueba a iniciar sesión de nuevo.",
+      "NETWORK": "No hemos podido conectar con el servidor. Comprueba tu conexión e inténtalo de nuevo.",
+      "UNKNOWN": "Algo ha salido mal. Inténtalo de nuevo.",
+      "RATE_LIMITED": "Demasiadas solicitudes. Espera un momento e inténtalo de nuevo.",
+      "RESERVATION_CONFLICT": "Alguien ya ha reservado este regalo.",
+      "NOT_RESERVATION_OWNER": "Este regalo se reservó desde otro navegador o dispositivo, así que no se puede cancelar desde aquí.",
+      "INVALID_URL": "Introduce un enlace que empiece por http:// o https://. No se pueden importar direcciones privadas o internas."
+    }
+  },
+  "nav": {
+    "dashboard": "Panel"
+  },
+  "auth": {
+    "signIn": "Iniciar sesión",
+    "signOut": "Cerrar sesión",
+    "loginTitle": "Te damos la bienvenida a Wishly",
+    "loginSubtitle": "Inicia sesión para crear y gestionar tus listas de deseos.",
+    "continueWithGoogle": "Continuar con Google",
+    "orDivider": "o",
+    "emailLabel": "Correo electrónico",
+    "sendMagicLink": "Envíame un enlace de acceso",
+    "sending": "Enviando…",
+    "checkInboxTitle": "Revisa tu bandeja de entrada",
+    "checkInboxBody": "Hemos enviado un enlace de acceso a {{email}}. Ábrelo en este dispositivo para continuar.",
+    "useAnotherEmail": "Usar otro correo",
+    "signingIn": "Iniciando sesión…",
+    "callbackFailedTitle": "No hemos podido iniciar tu sesión",
+    "callbackFailedBody": "Puede que el enlace haya caducado o ya se haya usado. Inténtalo de nuevo.",
+    "backToLogin": "Volver a iniciar sesión"
+  },
+  "dashboard": {
+    "title": "Tus listas de deseos",
+    "signedInAs": "Sesión iniciada como {{email}}",
+    "emptyTitle": "Aún no tienes listas",
+    "emptyDescription": "Crea tu primera lista de deseos y añade los regalos que te encantaría recibir."
+  },
+  "validation": {
+    "emailRequired": "Introduce tu correo electrónico.",
+    "emailInvalid": "Introduce un correo electrónico válido.",
+    "titleRequired": "Introduce un título.",
+    "titleTooLong": "Usa 100 caracteres como máximo.",
+    "descriptionTooLong": "Usa 1000 caracteres como máximo.",
+    "giftTitleTooLong": "Usa 150 caracteres como máximo.",
+    "giftDescriptionTooLong": "Usa 2000 caracteres como máximo.",
+    "urlInvalid": "Introduce un enlace que empiece por http:// o https://.",
+    "priceInvalid": "Introduce un importe como 19,99.",
+    "currencyInvalid": "Elige una moneda."
+  },
+  "wishlist": {
+    "create": "Crear lista de deseos",
+    "createSubmit": "Crear",
+    "titleLabel": "Título",
+    "descriptionLabel": "Descripción (opcional)",
+    "backToDashboard": "← Volver a tus listas",
+    "itemCount_one": "{{count}} regalo",
+    "itemCount_other": "{{count}} regalos",
+    "notFoundTitle": "Lista no encontrada",
+    "notFoundDescription": "Puede que se haya eliminado o que pertenezca a otra cuenta.",
+    "detailsHeading": "Detalles",
+    "dangerHeading": "Eliminar lista",
+    "delete": "Eliminar esta lista",
+    "deleteTitle": "¿Eliminar esta lista?",
+    "deleteDescription": "«{{title}}» y todos sus regalos se eliminarán de forma permanente. Esta acción no se puede deshacer."
+  },
+  "gift": {
+    "heading": "Regalos",
+    "add": "Añadir regalo",
+    "addSubmit": "Añadir regalo",
+    "titleLabel": "Nombre del regalo",
+    "productUrlLabel": "Enlace del producto (opcional)",
+    "priceLabel": "Precio (opcional)",
+    "currencyLabel": "Moneda",
+    "imageUrlLabel": "Enlace de la imagen (opcional)",
+    "descriptionLabel": "Notas (opcional)",
+    "emptyTitle": "Aún no hay regalos",
+    "emptyDescription": "Añade el primer regalo a esta lista.",
+    "viewProduct": "Ver producto",
+    "editLabel": "Editar {{title}}",
+    "deleteLabel": "Eliminar {{title}}",
+    "deleteTitle": "¿Eliminar este regalo?",
+    "deleteDescription": "«{{title}}» se quitará de la lista.",
+    "reserve": "Yo me encargo 🎁",
+    "reservedByYou": "Reservado por ti",
+    "cancelReservation": "Cancelar reserva",
+    "reserving": "Reservando…",
+    "cancelling": "Cancelando…",
+    "checking": "Comprobando…",
+    "reservedBadge": "Reservado por un invitado",
+    "importDetails": "Importar detalles",
+    "importing": "Importando…",
+    "importHint": "Pega el enlace de un producto e importa su nombre, imagen y precio. Después puedes editarlo todo.",
+    "importSuccess": "Detalles importados. Revísalos y cambia lo que quieras.",
+    "importPartial": "Hemos encontrado algunos detalles. Completa el resto.",
+    "importFailed": "No hemos podido leer los detalles de esa página. Puedes introducirlos tú mismo.",
+    "importBlocked": "Esta tienda no nos permite leer sus páginas automáticamente. Puedes introducir los detalles tú mismo.",
+    "imageHint": "Solo guardamos el enlace de la imagen; la imagen en sí sigue en el sitio web de la tienda.",
+    "previewLabel": "Vista previa",
+    "imagePreviewFailed": "No se pudo cargar la imagen. Puede que la tienda bloquee las vistas previas; puedes pegar otro enlace de imagen."
+  },
+  "share": {
+    "heading": "Compartir",
+    "description": "Cualquiera que tenga este enlace puede ver esta lista y reservar regalos. Compártelo solo con personas de confianza.",
+    "linkLabel": "Enlace para compartir",
+    "copy": "Copiar enlace",
+    "copied": "Enlace copiado ✓",
+    "copyFailed": "No se pudo copiar automáticamente. El enlace está seleccionado: cópialo manualmente.",
+    "preview": "Abrir página compartida",
+    "regenerate": "Crear un enlace nuevo",
+    "regenerateTitle": "¿Crear un enlace nuevo?",
+    "regenerateDescription": "El enlace actual dejará de funcionar de inmediato. Quien aún lo tenga perderá el acceso.",
+    "regenerateConfirm": "Crear enlace nuevo",
+    "regenerated": "Enlace nuevo creado ✓"
+  },
+  "public": {
+    "unavailableTitle": "Esta lista no está disponible",
+    "unavailableDescription": "Puede que el enlace sea incorrecto o que el propietario haya creado uno nuevo.",
+    "alreadyReserved": "Ya reservado",
+    "emptyTitle": "Aún no hay regalos",
+    "emptyDescription": "Vuelve a mirar pronto.",
+    "storageWarning": "Tu navegador está bloqueando el almacenamiento local. Puedes reservar un regalo, pero quizá no puedas cancelarlo después de salir de esta página."
+  },
+  "privacy": {
+    "link": "Privacidad",
+    "title": "Privacidad",
+    "intro": "Wishly te permite crear listas de deseos y compartirlas con un enlace. Esta página explica qué datos trata el servicio y cómo funciona la aplicación actualmente.",
+    "collect": {
+      "title": "Qué guardamos",
+      "body": "Si creas listas de deseos, guardamos tu correo electrónico (de Google o de un enlace de acceso por correo) y las listas y regalos que añades: títulos, notas, enlaces de productos e imágenes, y precios. A los invitados que reservan un regalo no se les pide ningún dato personal. Para una reserva guardamos solo un hash irreversible de un código aleatorio creado en el navegador del invitado, de modo que nadie, ni siquiera el propietario de la lista, puede ver quién reservó un regalo."
+    },
+    "browser": {
+      "title": "Qué se queda en tu navegador",
+      "body": "Wishly usa el almacenamiento local de tu navegador, no cookies de seguimiento, para tu idioma, tu sesión, la página a la que volver tras iniciar sesión y los códigos aleatorios que te permiten cancelar tus propias reservas. Si borras estos datos en un dispositivo, ya no podrás cancelar las reservas hechas allí. No usamos analítica ni rastreadores publicitarios."
+    },
+    "providers": {
+      "title": "Quién trata datos por nosotros",
+      "body": "Supabase proporciona la base de datos, el inicio de sesión y las funciones del servidor. Cloudflare entrega el sitio web y ve datos técnicos de las solicitudes, como las direcciones IP. Si eliges iniciar sesión con Google, Google gestiona ese acceso. Los correos de acceso los envía el proveedor de correo que haya configurado el operador. Cuando importas un producto desde un enlace, nuestro servidor descarga esa página web; no se usa ningún servicio de vista previa de terceros."
+    },
+    "links": {
+      "title": "Enlaces compartidos",
+      "body": "El enlace de una lista compartida funciona como una llave: quien lo tenga puede ver la lista y reservar regalos, y la página está oculta para los buscadores. Compártelo solo con personas de confianza. Puedes crear un enlace nuevo en cualquier momento, y el anterior deja de funcionar de inmediato."
+    },
+    "retention": {
+      "title": "Cuánto tiempo guardamos los datos",
+      "body": "Las listas, los regalos y las reservas se conservan hasta que los elimines. Al eliminar una lista también se eliminan sus regalos y reservas. Los datos de la cuenta se conservan mientras uses el servicio. Todavía no existe la eliminación de la cuenta por cuenta propia: contacta con el operador para que elimine tu cuenta y tus datos."
+    },
+    "rights": {
+      "title": "Tus derechos",
+      "body": "Puedes pedir al operador que te dé acceso a tus datos personales, que los corrija o los elimine, y que limite su tratamiento o te opongas a él. También puedes presentar una reclamación ante tu autoridad de protección de datos."
+    },
+    "contact": "Contacta con el operador:"
+  }
+}

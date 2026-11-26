@@ -1,0 +1,218 @@
+{
+  "common": {
+    "appName": "Wishly",
+    "skipToContent": "Skip to content",
+    "loading": "Loading…",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "retry": "Try again",
+    "saving": "Saving…",
+    "saved": "Saved ✓"
+  },
+  "language": {
+    "label": "Language",
+    "en": "English",
+    "es": "Español",
+    "de": "Deutsch"
+  },
+  "meta": {
+    "landingTitle": "Wishly – Share your wishlist",
+    "notFoundTitle": "Page not found – Wishly",
+    "loginTitle": "Sign in – Wishly",
+    "dashboardTitle": "Your wishlists – Wishly",
+    "callbackTitle": "Signing in – Wishly",
+    "newWishlistTitle": "New wishlist – Wishly",
+    "editWishlistTitle": "Edit wishlist – Wishly",
+    "sharedTitle": "{{title}} – Wishly",
+    "privacyTitle": "Privacy – Wishly"
+  },
+  "landing": {
+    "eyebrow": "Gift lists, made simple - Hello world!",
+    "title": "Wishes worth sharing 🎁",
+    "subtitle": "Create wishlists, share them with a link, and let friends and family reserve gifts without signing up.",
+    "featuresLabel": "What Wishly offers",
+    "features": {
+      "share": {
+        "title": "Share by link",
+        "description": "Every list gets its own private link. No accounts needed to view it."
+      },
+      "reserve": {
+        "title": "Reserve in a tap",
+        "description": "Guests mark a gift as taken so nobody buys the same thing twice."
+      },
+      "live": {
+        "title": "Always up to date",
+        "description": "Reservations update on their own while the page is open."
+      }
+    },
+    "cta": "Get started"
+  },
+  "notFound": {
+    "title": "We couldn't find that page",
+    "description": "The link may be wrong or no longer available.",
+    "home": "Back to home"
+  },
+  "errors": {
+    "generic": "Something went wrong. Please try again.",
+    "reservationConflict": "Someone has already reserved this gift.",
+    "auth": {
+      "RATE_LIMITED": "Too many attempts. Please wait a moment and try again.",
+      "NETWORK": "We could not reach the server. Check your connection and try again.",
+      "FAILED": "Sign-in did not work. Please try again.",
+      "NOT_CONFIGURED": "Sign-in is not configured for this environment yet."
+    },
+    "api": {
+      "NOT_FOUND": "We could not find that item. It may have been deleted.",
+      "UNAUTHORIZED": "You are not allowed to do that. Try signing in again.",
+      "NETWORK": "We could not reach the server. Check your connection and try again.",
+      "UNKNOWN": "Something went wrong. Please try again.",
+      "RATE_LIMITED": "Too many requests. Please wait a moment and try again.",
+      "RESERVATION_CONFLICT": "Someone has already reserved this gift.",
+      "NOT_RESERVATION_OWNER": "This gift was reserved from another browser or device, so it can’t be cancelled here.",
+      "INVALID_URL": "Enter a link starting with http:// or https://. Private or internal addresses can’t be imported."
+    }
+  },
+  "nav": {
+    "dashboard": "Dashboard"
+  },
+  "auth": {
+    "signIn": "Sign in",
+    "signOut": "Sign out",
+    "loginTitle": "Welcome to Wishly",
+    "loginSubtitle": "Sign in to create and manage your wishlists.",
+    "continueWithGoogle": "Continue with Google",
+    "orDivider": "or",
+    "emailLabel": "Email address",
+    "sendMagicLink": "Email me a sign-in link",
+    "sending": "Sending…",
+    "checkInboxTitle": "Check your inbox",
+    "checkInboxBody": "We sent a sign-in link to {{email}}. Open it on this device to continue.",
+    "useAnotherEmail": "Use a different email",
+    "signingIn": "Signing you in…",
+    "callbackFailedTitle": "We couldn't sign you in",
+    "callbackFailedBody": "The sign-in link may have expired or already been used. Please try again.",
+    "backToLogin": "Back to sign in"
+  },
+  "dashboard": {
+    "title": "Your wishlists",
+    "signedInAs": "Signed in as {{email}}",
+    "emptyTitle": "No wishlists yet",
+    "emptyDescription": "Create your first wishlist and add the gifts you would love to receive."
+  },
+  "validation": {
+    "emailRequired": "Enter your email address.",
+    "emailInvalid": "Enter a valid email address.",
+    "titleRequired": "Enter a title.",
+    "titleTooLong": "Use 100 characters or fewer.",
+    "descriptionTooLong": "Use 1,000 characters or fewer.",
+    "giftTitleTooLong": "Use 150 characters or fewer.",
+    "giftDescriptionTooLong": "Use 2,000 characters or fewer.",
+    "urlInvalid": "Enter a link starting with http:// or https://.",
+    "priceInvalid": "Enter an amount like 19.99.",
+    "currencyInvalid": "Choose a currency."
+  },
+  "wishlist": {
+    "create": "Create wishlist",
+    "createSubmit": "Create",
+    "titleLabel": "Title",
+    "descriptionLabel": "Description (optional)",
+    "backToDashboard": "← Back to your wishlists",
+    "itemCount_one": "{{count}} gift",
+    "itemCount_other": "{{count}} gifts",
+    "notFoundTitle": "Wishlist not found",
+    "notFoundDescription": "It may have been deleted, or it belongs to another account.",
+    "detailsHeading": "Details",
+    "dangerHeading": "Delete wishlist",
+    "delete": "Delete this wishlist",
+    "deleteTitle": "Delete this wishlist?",
+    "deleteDescription": "“{{title}}” and all of its gifts will be permanently deleted. This cannot be undone."
+  },
+  "gift": {
+    "heading": "Gifts",
+    "add": "Add gift",
+    "addSubmit": "Add gift",
+    "titleLabel": "Gift name",
+    "productUrlLabel": "Product link (optional)",
+    "priceLabel": "Price (optional)",
+    "currencyLabel": "Currency",
+    "imageUrlLabel": "Image link (optional)",
+    "descriptionLabel": "Notes (optional)",
+    "emptyTitle": "No gifts yet",
+    "emptyDescription": "Add the first gift to this wishlist.",
+    "viewProduct": "View product",
+    "editLabel": "Edit {{title}}",
+    "deleteLabel": "Delete {{title}}",
+    "deleteTitle": "Delete this gift?",
+    "deleteDescription": "“{{title}}” will be removed from the wishlist.",
+    "reserve": "I'll get this 🎁",
+    "reservedByYou": "Reserved by you",
+    "cancelReservation": "Cancel reservation",
+    "reserving": "Reserving…",
+    "cancelling": "Cancelling…",
+    "checking": "Checking…",
+    "reservedBadge": "Reserved by a guest",
+    "importDetails": "Import details",
+    "importing": "Importing…",
+    "importHint": "Paste a product link and import its name, image and price. You can edit everything afterwards.",
+    "importSuccess": "Details imported. Check them and change anything you like.",
+    "importPartial": "We found some details. Please fill in the rest.",
+    "importFailed": "We couldn’t read details from that page. You can enter them yourself.",
+    "importBlocked": "This shop doesn’t let us read its pages automatically. You can enter the details yourself.",
+    "imageHint": "We only save the link to the image; the picture itself stays on the shop’s website.",
+    "previewLabel": "Preview",
+    "imagePreviewFailed": "The image couldn’t be loaded. The shop may block previews; you can paste a different image link."
+  },
+  "share": {
+    "heading": "Share",
+    "description": "Anyone with this link can view this wishlist and reserve gifts. Only share it with people you trust.",
+    "linkLabel": "Share link",
+    "copy": "Copy link",
+    "copied": "Link copied ✓",
+    "copyFailed": "Could not copy automatically. The link is selected: copy it manually.",
+    "preview": "Open shared page",
+    "regenerate": "Create a new link",
+    "regenerateTitle": "Create a new link?",
+    "regenerateDescription": "The current link will stop working immediately. Anyone who still has it will lose access.",
+    "regenerateConfirm": "Create new link",
+    "regenerated": "New link created ✓"
+  },
+  "public": {
+    "unavailableTitle": "This wishlist isn’t available",
+    "unavailableDescription": "The link may be wrong, or the owner may have created a new one.",
+    "alreadyReserved": "Already reserved",
+    "emptyTitle": "No gifts here yet",
+    "emptyDescription": "Check back soon.",
+    "storageWarning": "Your browser is blocking local storage. You can still reserve a gift, but you may not be able to cancel it after you leave this page."
+  },
+  "privacy": {
+    "link": "Privacy",
+    "title": "Privacy",
+    "intro": "Wishly lets you create gift wishlists and share them with a link. This page explains what data the service handles and how the app works today.",
+    "collect": {
+      "title": "What we store",
+      "body": "If you create wishlists, we store your email address (from Google or an email sign-in link) and the wishlists and gifts you add: titles, notes, product and image links, and prices. Guests who reserve a gift are not asked for any personal data. For a reservation we store only a one-way hash of a random code created in the guest’s browser, so nobody, including the list owner, can see who reserved a gift."
+    },
+    "browser": {
+      "title": "What stays in your browser",
+      "body": "Wishly uses your browser’s local storage, not tracking cookies, for your language choice, your sign-in session, the page to return to after signing in, and the random codes that let you cancel your own reservations. If you clear this data on a device, you can no longer cancel reservations made there. We do not use analytics or advertising trackers."
+    },
+    "providers": {
+      "title": "Who processes data for us",
+      "body": "Supabase provides the database, sign-in and server functions. Cloudflare delivers the website and sees technical request data such as IP addresses. If you choose Google sign-in, Google handles that login. Sign-in emails are sent by the email provider the operator has configured. When you import a product from a link, our server fetches that web page; no third-party preview service is used."
+    },
+    "links": {
+      "title": "Shared links",
+      "body": "A shared wishlist link works like a key: anyone who has it can see the list and reserve gifts, and the page is hidden from search engines. Share it only with people you trust. You can create a new link at any time, which immediately stops the old one from working."
+    },
+    "retention": {
+      "title": "How long we keep data",
+      "body": "Wishlists, gifts and reservations are kept until you delete them. Deleting a wishlist also deletes its gifts and reservations. Account data is kept while you use the service. Self-service account deletion is not available yet: contact the operator to have your account and data removed."
+    },
+    "rights": {
+      "title": "Your rights",
+      "body": "You can ask the operator to give you access to your personal data, correct it or delete it, and to restrict or object to its processing. You can also complain to your data protection authority."
+    },
+    "contact": "Contact the operator:"
+  }
+}
