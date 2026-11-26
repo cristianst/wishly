@@ -1,6 +1,6 @@
 # Deploying Wishly
 
-There is **one environment: production** (no staging, no pull-request previews). Release path: **pull request → CI → review → merge to `main` → approval → database migrations → Edge Functions → frontend → smoke tests.**
+There is **one environment, `prod`** (the live site; no staging, no pull-request previews). Release path: **pull request → CI → review → merge to `main` → approval → database migrations → Edge Functions → frontend → smoke tests.**
 Migrations are backward-compatible and run *before* the code that needs them. The whole sequence is one workflow
 (`.github/workflows/deploy.yml`), so ordering is guaranteed.
 
@@ -43,7 +43,7 @@ Three of these are secrets (4, 5, 8): paste them once into GitHub and do not sto
    status checks. The check names appear after CI has run once on a pull request: *Lint, types, tests, build*,
    *Database (RLS policies and reservation races)* and *Edge Functions (Deno type check)*. Work happens on branches
    (`feature/…`, `fix/…`) and is merged by pull request; **only a merge to `main` deploys**.
-4. **Create the `production` environment** (Settings → Environments → *New environment*):
+4. **Create the `prod` environment** (Settings → Environments → *New environment*):
    - *Required reviewers*: add yourself or the people allowed to release, so every release waits for a click before it
      changes anything live.
    - *Deployment branches and tags*: **Selected** → allow `main` and tags only, so no other branch can use the
@@ -92,7 +92,7 @@ Do these *before* the first release so sign-in works for real users:
 
 ### Part 4 · Put the values into GitHub
 
-In Settings → Environments → **production**:
+In Settings → Environments → **prod**:
 
 | Kind | Name | Value |
 | --- | --- | --- |
@@ -114,8 +114,8 @@ put in a `VITE_` variable: CI scans the bundle and fails the build if one gets i
 
 - [ ] Repository is in the allowed organisation and the branch is pushed there.
 - [ ] The two third-party actions are allowed; workflow permissions are read-only.
-- [ ] `main` is protected; the `production` environment has reviewers and *deployment branches = main and tags*.
-- [ ] Values 1–9 collected; all nine are set in the `production` environment (three secrets, six variables).
+- [ ] `main` is protected; the `prod` environment has reviewers and *deployment branches = main and tags*.
+- [ ] Values 1–9 collected; all nine are set in the `prod` environment (three secrets, six variables).
 - [ ] Supabase: Site URL and redirect URL set; custom SMTP, Google sign-in and email templates done.
 - [ ] Cloudflare: Direct Upload project exists with production branch `main`; token has only *Pages: Edit*.
 - [ ] Open a small pull request first: CI should go green on GitHub. Then merge it: the **Deploy** run pauses for your
@@ -126,7 +126,7 @@ put in a `VITE_` variable: CI scans the bundle and fails the build if one gets i
 To keep things simple there is a single live environment, so migrations and functions go straight to production.
 That is why the release has several safety nets instead: everything must pass CI first (including the real-Postgres
 RLS and race tests, which run against a throwaway database, not production), the **dry-run** shows pending migrations
-before they are applied, the `production` environment can require a human approval, smoke tests run right after, and
+before they are applied, the `prod` environment can require a human approval, smoke tests run right after, and
 rollback is quick (see below). If this ever becomes too risky, add a second Supabase project and a preview workflow;
 the plan describes both.
 
