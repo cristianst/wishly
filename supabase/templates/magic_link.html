@@ -1,0 +1,31 @@
+{{ $lang := "en" }}{{ if .Data }}{{ if .Data.language }}{{ $lang = .Data.language }}{{ end }}{{ end }}<!DOCTYPE html>
+<html lang="{{ $lang }}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wishly</title>
+  </head>
+  <body style="margin:0;padding:0;background-color:#faf9f7;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#faf9f7;">
+      <tr>
+        <td align="center" style="padding:32px 16px;">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:480px;background-color:#ffffff;border-radius:20px;border:1px solid #ececf1;">
+            <tr>
+              <td style="padding:32px 28px;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#1f1b2e;">
+                <p style="margin:0 0 20px;font-size:18px;font-weight:600;color:#5b3fd9;">🎁 Wishly</p>
+                <h1 style="margin:0 0 12px;font-size:24px;line-height:1.3;font-weight:600;">{{ if eq $lang "es" }}Inicia sesión en Wishly 🎁{{ else if eq $lang "de" }}Bei Wishly anmelden 🎁{{ else }}Sign in to Wishly 🎁{{ end }}</h1>
+                <p style="margin:0 0 24px;font-size:16px;line-height:1.5;color:#5b5870;">{{ if eq $lang "es" }}Usa el botón de abajo para iniciar sesión. El enlace solo funciona una vez y caduca pronto.{{ else if eq $lang "de" }}Nutze die Schaltfläche unten, um dich anzumelden. Der Link funktioniert nur einmal und läuft bald ab.{{ else }}Use the button below to sign in. The link works once and expires soon.{{ end }}</p>
+                <p style="margin:0 0 24px;">
+                  <a href="{{ .ConfirmationURL }}" style="display:inline-block;padding:14px 28px;background-color:#5b3fd9;color:#ffffff;text-decoration:none;border-radius:999px;font-size:16px;font-weight:600;">{{ if eq $lang "es" }}Iniciar sesión en Wishly{{ else if eq $lang "de" }}Bei Wishly anmelden{{ else }}Sign in to Wishly{{ end }}</a>
+                </p>
+                <p style="margin:0 0 8px;font-size:13px;line-height:1.5;color:#5b5870;">{{ if eq $lang "es" }}Abre el enlace en el mismo navegador que usaste para solicitarlo.{{ else if eq $lang "de" }}Öffne den Link in demselben Browser, mit dem du ihn angefordert hast.{{ else }}Open the link in the same browser you used to request it.{{ end }}</p>
+                <p style="margin:0 0 20px;font-size:13px;line-height:1.5;color:#5b5870;">{{ if eq $lang "es" }}¿No funciona el botón? Copia este enlace en tu navegador:{{ else if eq $lang "de" }}Schaltfläche funktioniert nicht? Kopiere diesen Link in deinen Browser:{{ else }}Button not working? Copy this link into your browser:{{ end }}<br /><a href="{{ .ConfirmationURL }}" style="color:#5b3fd9;word-break:break-all;">{{ .ConfirmationURL }}</a></p>
+                <p style="margin:0;font-size:13px;line-height:1.5;color:#8a879b;">{{ if eq $lang "es" }}Si no has solicitado este correo, puedes ignorarlo sin problema.{{ else if eq $lang "de" }}Wenn du diese E-Mail nicht angefordert hast, kannst du sie einfach ignorieren.{{ else }}If you didn't request this email, you can safely ignore it.{{ end }}</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
